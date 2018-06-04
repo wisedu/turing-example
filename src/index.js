@@ -16,6 +16,7 @@ Object.assign(window["tg-turing"].iview.form, {
     "text": "iview-fc-text",
     "date": "iview-fc-date",
     "date-local": "iview-fc-date",
+    "select": "iview-fc-select",
 });
 
 

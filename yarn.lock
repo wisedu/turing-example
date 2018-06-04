@@ -5817,20 +5817,20 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-turing-iview@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tg-turing-iview/-/tg-turing-iview-1.0.0.tgz#2f25dc940073da69f62b82dd79273044112a86ac"
+tg-turing-iview@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tg-turing-iview/-/tg-turing-iview-1.0.2.tgz#8416d02ef12201a1dae704768d4ef84f7686cb57"
   dependencies:
     axios "^0.18.0"
     bh-iview "^1.0.1"
-    tg-turing "^1.4.7"
+    tg-turing "^1.4.18"
     uuid "^3.2.1"
     vue "^2.5.16"
     vue-router "^3.0.1"
 
-tg-turing@^1.4.7, tg-turing@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.4.8.tgz#885bb95ec208418cc5172a4830c0710e0c949f5e"
+tg-turing@^1.4.18:
+  version "1.4.18"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.4.18.tgz#f86d47c3ab2104f32f016580f6552782b57ad522"
   dependencies:
     axios "^0.18.0"
     bh-iview "^1.0.1"
