@@ -23,9 +23,14 @@ export default class extends DataAdapter{
                 deleted_at: {}
             },
             "默认表单:form": {
-                name: {readonly:true},
-                workcode: {xtype:"text"},
                 photo: {xtype:"date"},
+                photo2: {xtype:"date"},
+                photo3: {xtype:"select"},
+                photo3: {xtype:"number-range"},
+                photo3: {xtype:"uploadfile"},
+                "CSRQ": {"xtype": "buttonlist","dataSize": 10},
+                "CSRQ1": {"xtype": "date-local","dataSize": 10},
+                "CCQJ": {"xtype": "selecttable","url": "/axsfw/sys/swpubapp/*default/ggmk/hczzdmhss.do","dataSize": 300},
             },
             "默认查询": {
             }
@@ -41,14 +46,5 @@ export default class extends DataAdapter{
         let props = name.split(":")
         let iviewtype = props[1];
         return tgTuringIview.adapter(iviewtype, this.getView(name), params);
-    }
-    // metaAG(metaid, type, params) {
-    //     return aggridAdapter(type, this.getMeta(metaid), params);
-    // }
-    getAllCreatedTime() {
-        return this.execute({url:"/api/user/getAllCreatedTime", method:"get"}).then(datas => datas.data.data)
-    }
-    setUserToDept(dept, users){
-        return this.execute({url:"/api/user/setUserToDept", method:"post", params:{dept, users}}).then(datas => datas.data.data)
     }
 }

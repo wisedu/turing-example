@@ -2,16 +2,22 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './app.vue'
 import iView from 'bh-iview';
-import 'bh-iview/dist/styles/iview.css';
 Vue.use(iView);
+import MintUI from 'bh-mint-ui2'
+Vue.use(MintUI)
 import tgTuring from 'tg-turing';
-import 'tg-turing/dist/css/default/tg-turing.min.css';
 Vue.use(tgTuring);
 window["tg-turing"] = tgTuring;
 
 import tgTuringIview from 'tg-turing-iview';
 Vue.use(tgTuringIview);
 tgTuringIview.init();
+
+import tgTuringMint from 'tg-turing-mint';
+Vue.use(tgTuringMint);
+tgTuringMint.init();
+
+
 
 import home from './pages/home.vue';
 
