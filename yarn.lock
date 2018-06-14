@@ -5857,30 +5857,30 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-turing-iview@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/tg-turing-iview/-/tg-turing-iview-1.0.8.tgz#f5e7578aa03f2319d24604a226d3abe663c06b61"
+tg-turing-iview@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/tg-turing-iview/-/tg-turing-iview-1.1.2.tgz#cb039e30d149e5affb0c822e0dfa534c80bba71e"
   dependencies:
     axios "^0.18.0"
     bh-iview "^1.2.2"
-    tg-turing "^1.6.5"
+    tg-turing "^1.6.12"
     uuid "^3.2.1"
     vue "^2.5.16"
     vue-router "^3.0.1"
 
-tg-turing-mint@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/tg-turing-mint/-/tg-turing-mint-1.0.1.tgz#cf3a1810abc2e9281add2f7ed9ef214d4d8a4b39"
+tg-turing-mint@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tg-turing-mint/-/tg-turing-mint-1.0.2.tgz#9137c8c83de84ddbb5196e53a763eb8f43fcbbb3"
   dependencies:
     axios "^0.18.0"
     bh-mint-ui2 "^1.1.43"
-    tg-turing "^1.6.6"
+    tg-turing "^1.6.12"
     uuid "^3.2.1"
     vue "^2.5.16"
 
-tg-turing@^1.6.5, tg-turing@^1.6.6:
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.6.6.tgz#cfe14bb336e5d018ee2074438f133f4bc8ab6335"
+tg-turing@^1.6.12:
+  version "1.6.12"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.6.12.tgz#59e2083292d2d4b3aa5e7972df887c017c3c83d0"
   dependencies:
     axios "^0.18.0"
     core-js "^2.5.7"

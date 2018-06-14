@@ -17,7 +17,10 @@ import tgTuringMint from 'tg-turing-mint';
 Vue.use(tgTuringMint);
 tgTuringMint.init();
 
+import OaAbc from "./components/oa-abc";
+Vue.component(OaAbc.name, OaAbc);
 
+window["tg-turing"].iview.form["text"] = "oa-abc";
 
 import home from './pages/home.vue';
 
