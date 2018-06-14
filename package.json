@@ -7,9 +7,9 @@
     "axios": "^0.18.0",
     "bh-iview": "^1.0.1",
     "bh-mint-ui2": "^1.1.43",
-    "tg-turing": "^1.6.12",
-    "tg-turing-iview": "^1.1.2",
-    "tg-turing-mint": "^1.0.2",
+    "tg-turing": "^1.7.0",
+    "tg-turing-iview": "^1.2.3",
+    "tg-turing-mint": "^1.2.1",
     "uuid": "^3.2.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"

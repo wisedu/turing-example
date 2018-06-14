@@ -4,7 +4,7 @@
             
         </tg-form>
         <tg-form :fields="fields_scd" :type="type" :column=4 v-model="data" readonly displayFieldFormat="_DISPLAY">
-            <div slot="renderItem" name="CYM">
+            <div slot="CYM">
                 <ul id="sortable">
                     <li class="ui-state-default">Item 1</li>
                     <li class="ui-state-default">Item 2</li>
