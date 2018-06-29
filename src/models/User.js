@@ -1,50 +1,48 @@
 import {DataAdapter} from 'tg-turing'
-import tgTuringIview from 'tg-turing-iview';
+import tgTuringAntd from 'tg-turing-antd';
 export default class extends DataAdapter{
     constructor() {
         super()
         let views = {
             "default": {
-                opt:{ caption:"" },
-                name: { caption: "姓名" },
-                workcode: { caption: "工号" },
-                photo: { caption: "照片" },
-                created_at: { caption: "创建" },
-                updated_at: { caption: "更新" },
-                deleted_at: { caption: "删除" }
+                ACCOUNTID: { caption: "登录帐号" },
+                PASSWORD: { caption: "密码" },
+                ACCOUNTNAME: { caption: "昵称" },
+                EMAIL: { caption: "邮箱" },
+                CELLPHONE: { caption: "手机" },
+                USERTYPE: { caption: "用户类型" },
+                USERSTATE: { "caption": "用户状态" },
             },
             "默认列表:table": {
-                opt: {type: 'selection',width: 60,align: 'center'},
-                name: {sortable: "custom"},
-                workcode: {sortable: "custom"},
-                photo: { },
-                created_at: {filters:[]},
-                updated_at: {},
-                deleted_at: {}
+                ACCOUNTID: {  },
+                PASSWORD: {  },
+                ACCOUNTNAME: {  },
+                EMAIL: {  },
+                CELLPHONE: {  },
+                USERTYPE: {  },
+                USERSTATE: {  },
             },
             "默认表单:form": {
-                photo: {xtype:"date"},
-                photo2: {xtype:"date"},
-                photo3: {xtype:"select"},
-                photo3: {xtype:"number-range"},
-                photo3: {xtype:"uploadfile"},
-                "CSRQ": {"xtype": "buttonlist","dataSize": 10},
-                "CSRQ1": {"xtype": "date-local","dataSize": 10},
-                "CCQJ": {"xtype": "selecttable","url": "/axsfw/sys/swpubapp/*default/ggmk/hczzdmhss.do","dataSize": 300},
+                ACCOUNTID: { required:true },
+                PASSWORD: { required:true },
+                ACCOUNTNAME: { required:true },
+                EMAIL: { checkType: "custom[email]" },
+                CELLPHONE: { checkType: "custom[phone]" },
+                USERTYPE: { "xtype": "select", "url": "/emap/code/91c0d3ea-7efc-4b5c-b021-f3d211f5291c/userType.do", required:true },
+                USERSTATE: { "xtype": "select", "url": "/emap/code/91c0d3ea-7efc-4b5c-b021-f3d211f5291c/userState.do", required:true },
             },
             "默认查询": {
             }
         }
-        this.actions.find.url = "/api/user";
-        this.actions.save.url = "/api/user/save";
-        this.actions.delete.url = "/api/user";
-        this.actions.delete.method = "delete"
+        this.actions.find.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_QUERY.do";
+        this.actions.save.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_MODIFY.do";
+        this.actions.delete.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_DELETE.d";
 
         this.initView(views);
     }
     view(name, params) {
         let props = name.split(":")
-        let iviewtype = props[1];
-        return tgTuringIview.adapter(iviewtype, this.getView(name), params);
+        let type = props[1];
+        return tgTuringAntd.Adapter(type, this.getView(name), params);
     }
 }

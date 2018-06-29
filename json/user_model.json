@@ -1,0 +1,540 @@
+{
+    "models": [
+        {
+            "name": "T_FUNA_USER_QUERY_SINGLE",
+            "modelName": "T_FUNA_USER",
+            "appName": "funauthapp",
+            "url": "yhgl/T_FUNA_USER_QUERY_SINGLE.do",
+            "type": "get",
+            "controls": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "hidden": true,
+                    "dataSize": 40
+                },
+                {
+                    "name": "ACCOUNTID",
+                    "dataType": "String",
+                    "caption": "登录帐号",
+                    "quickSearch": true,
+                    "dataSize": 40,
+                    "form.required": true
+                },
+                {
+                    "name": "PASSWORD",
+                    "dataType": "String",
+                    "caption": "密码",
+                    "hidden": true,
+                    "dataSize": 200
+                },
+                {
+                    "name": "ACCOUNTNAME",
+                    "dataType": "String",
+                    "caption": "昵称",
+                    "quickSearch": true,
+                    "dataSize": 50,
+                    "form.required": true
+                },
+                {
+                    "name": "EMAIL",
+                    "dataType": "String",
+                    "caption": "邮箱",
+                    "checkType": "custom[email]",
+                    "dataSize": 100
+                },
+                {
+                    "name": "CELLPHONE",
+                    "dataType": "String",
+                    "caption": "手机",
+                    "checkType": "custom[phone]",
+                    "quickSearch": true,
+                    "dataSize": 20
+                },
+                {
+                    "name": "USERTYPE",
+                    "dataType": "String",
+                    "caption": "用户类型",
+                    "xtype": "select",
+                    "url": "/emap/code/91c0d3ea-7efc-4b5c-b021-f3d211f5291c/userType.do",
+                    "search.xtype": "multi-select2",
+                    "dataSize": 40,
+                    "form.required": true
+                },
+                {
+                    "name": "USERSTATE",
+                    "dataType": "String",
+                    "caption": "用户状态",
+                    "xtype": "select",
+                    "url": "/emap/code/91c0d3ea-7efc-4b5c-b021-f3d211f5291c/userState.do",
+                    "search.xtype": "multi-select2",
+                    "dataSize": 20,
+                    "form.required": true
+                },
+                {
+                    "name": "CREATEUSER",
+                    "dataType": "String",
+                    "caption": "添加者",
+                    "grid.fixed": true,
+                    "form.hidden": true,
+                    "dataSize": 40
+                },
+                {
+                    "name": "MODIFYUSER",
+                    "dataType": "String",
+                    "caption": "修改者",
+                    "form.hidden": true,
+                    "dataSize": 40
+                },
+                {
+                    "name": "TJRQ",
+                    "dataType": "Timestamp",
+                    "caption": "添加日期",
+                    "grid.fixed": true,
+                    "form.hidden": true,
+                    "dataSize": 7
+                },
+                {
+                    "name": "XGRQ",
+                    "dataType": "Timestamp",
+                    "caption": "修改日期",
+                    "form.hidden": true,
+                    "dataSize": 7
+                }
+            ],
+            "params": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "dataSize": 40
+                },
+                {
+                    "name": "ACCOUNTID",
+                    "dataType": "String",
+                    "caption": "登录帐号",
+                    "dataSize": 40
+                },
+                {
+                    "name": "PASSWORD",
+                    "dataType": "String",
+                    "caption": "密码",
+                    "dataSize": 200
+                },
+                {
+                    "name": "ACCOUNTNAME",
+                    "dataType": "String",
+                    "caption": "昵称",
+                    "dataSize": 50
+                },
+                {
+                    "name": "EMAIL",
+                    "dataType": "String",
+                    "caption": "邮箱",
+                    "dataSize": 100
+                },
+                {
+                    "name": "CELLPHONE",
+                    "dataType": "String",
+                    "caption": "手机",
+                    "dataSize": 20
+                },
+                {
+                    "name": "USERTYPE",
+                    "dataType": "String",
+                    "caption": "用户类型",
+                    "dataSize": 40
+                },
+                {
+                    "name": "USERSTATE",
+                    "dataType": "String",
+                    "caption": "用户状态",
+                    "dataSize": 20
+                },
+                {
+                    "name": "CREATEUSER",
+                    "dataType": "String",
+                    "caption": "添加者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "MODIFYUSER",
+                    "dataType": "String",
+                    "caption": "修改者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "TJRQ",
+                    "dataType": "Timestamp",
+                    "caption": "添加日期",
+                    "dataSize": 7
+                },
+                {
+                    "name": "XGRQ",
+                    "dataType": "Timestamp",
+                    "caption": "修改日期",
+                    "dataSize": 7
+                }
+            ]
+        },
+        {
+            "name": "T_FUNA_USER_ADD",
+            "modelName": "T_FUNA_USER",
+            "appName": "funauthapp",
+            "url": "yhgl/T_FUNA_USER_ADD.do",
+            "type": "set",
+            "params": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "dataSize": 40
+                },
+                {
+                    "name": "ACCOUNTID",
+                    "dataType": "String",
+                    "caption": "登录帐号",
+                    "dataSize": 40
+                },
+                {
+                    "name": "PASSWORD",
+                    "dataType": "String",
+                    "caption": "密码",
+                    "dataSize": 200
+                },
+                {
+                    "name": "ACCOUNTNAME",
+                    "dataType": "String",
+                    "caption": "昵称",
+                    "dataSize": 50
+                },
+                {
+                    "name": "EMAIL",
+                    "dataType": "String",
+                    "caption": "邮箱",
+                    "dataSize": 100
+                },
+                {
+                    "name": "CELLPHONE",
+                    "dataType": "String",
+                    "caption": "手机",
+                    "dataSize": 20
+                },
+                {
+                    "name": "USERTYPE",
+                    "dataType": "String",
+                    "caption": "用户类型",
+                    "dataSize": 40
+                },
+                {
+                    "name": "USERSTATE",
+                    "dataType": "String",
+                    "caption": "用户状态",
+                    "dataSize": 20
+                },
+                {
+                    "name": "CREATEUSER",
+                    "dataType": "String",
+                    "caption": "添加者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "MODIFYUSER",
+                    "dataType": "String",
+                    "caption": "修改者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "TJRQ",
+                    "dataType": "Timestamp",
+                    "caption": "添加日期",
+                    "dataSize": 7
+                },
+                {
+                    "name": "XGRQ",
+                    "dataType": "Timestamp",
+                    "caption": "修改日期",
+                    "dataSize": 7
+                }
+            ]
+        },
+        {
+            "name": "T_FUNA_USER_QUERY",
+            "modelName": "T_FUNA_USER",
+            "appName": "funauthapp",
+            "url": "yhgl/T_FUNA_USER_QUERY.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "hidden": true,
+                    "dataSize": 40
+                },
+                {
+                    "name": "ACCOUNTID",
+                    "dataType": "String",
+                    "caption": "登录帐号",
+                    "quickSearch": true,
+                    "dataSize": 40,
+                    "required": true
+                },
+                {
+                    "name": "PASSWORD",
+                    "dataType": "String",
+                    "caption": "密码",
+                    "hidden": true,
+                    "dataSize": 200
+                },
+                {
+                    "name": "ACCOUNTNAME",
+                    "dataType": "String",
+                    "caption": "昵称",
+                    "quickSearch": true,
+                    "dataSize": 50,
+                    "form.required": true
+                },
+                {
+                    "name": "EMAIL",
+                    "dataType": "String",
+                    "caption": "邮箱",
+                    "checkType": "custom[email]",
+                    "dataSize": 100
+                },
+                {
+                    "name": "CELLPHONE",
+                    "dataType": "String",
+                    "caption": "手机",
+                    "checkType": "custom[phone]",
+                    "quickSearch": true,
+                    "dataSize": 20
+                },
+                {
+                    "name": "USERTYPE",
+                    "dataType": "String",
+                    "caption": "用户类型",
+                    "xtype": "select",
+                    "url": "/emap/code/91c0d3ea-7efc-4b5c-b021-f3d211f5291c/userType.do",
+                    "search.xtype": "multi-select2",
+                    "dataSize": 40,
+                    "form.required": true
+                },
+                {
+                    "name": "USERSTATE",
+                    "dataType": "String",
+                    "caption": "用户状态",
+                    "xtype": "select",
+                    "url": "/emap/code/91c0d3ea-7efc-4b5c-b021-f3d211f5291c/userState.do",
+                    "search.xtype": "multi-select2",
+                    "dataSize": 20,
+                    "form.required": true
+                },
+                {
+                    "name": "CREATEUSER",
+                    "dataType": "String",
+                    "caption": "添加者",
+                    "grid.fixed": true,
+                    "form.hidden": true,
+                    "dataSize": 40
+                },
+                {
+                    "name": "MODIFYUSER",
+                    "dataType": "String",
+                    "caption": "修改者",
+                    "form.hidden": true,
+                    "dataSize": 40
+                },
+                {
+                    "name": "TJRQ",
+                    "dataType": "Timestamp",
+                    "caption": "添加日期",
+                    "grid.fixed": true,
+                    "form.hidden": true,
+                    "dataSize": 7
+                },
+                {
+                    "name": "XGRQ",
+                    "dataType": "Timestamp",
+                    "caption": "修改日期",
+                    "form.hidden": true,
+                    "dataSize": 7
+                }
+            ],
+            "params": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "dataSize": 40
+                },
+                {
+                    "name": "ACCOUNTID",
+                    "dataType": "String",
+                    "caption": "登录帐号",
+                    "dataSize": 40
+                },
+                {
+                    "name": "PASSWORD",
+                    "dataType": "String",
+                    "caption": "密码",
+                    "dataSize": 200
+                },
+                {
+                    "name": "ACCOUNTNAME",
+                    "dataType": "String",
+                    "caption": "昵称",
+                    "dataSize": 50
+                },
+                {
+                    "name": "EMAIL",
+                    "dataType": "String",
+                    "caption": "邮箱",
+                    "dataSize": 100
+                },
+                {
+                    "name": "CELLPHONE",
+                    "dataType": "String",
+                    "caption": "手机",
+                    "dataSize": 20
+                },
+                {
+                    "name": "USERTYPE",
+                    "dataType": "String",
+                    "caption": "用户类型",
+                    "dataSize": 40
+                },
+                {
+                    "name": "USERSTATE",
+                    "dataType": "String",
+                    "caption": "用户状态",
+                    "dataSize": 20
+                },
+                {
+                    "name": "CREATEUSER",
+                    "dataType": "String",
+                    "caption": "添加者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "MODIFYUSER",
+                    "dataType": "String",
+                    "caption": "修改者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "TJRQ",
+                    "dataType": "Timestamp",
+                    "caption": "添加日期",
+                    "dataSize": 7
+                },
+                {
+                    "name": "XGRQ",
+                    "dataType": "Timestamp",
+                    "caption": "修改日期",
+                    "dataSize": 7
+                }
+            ]
+        },
+        {
+            "name": "T_FUNA_USER_MODIFY",
+            "modelName": "T_FUNA_USER",
+            "appName": "funauthapp",
+            "url": "yhgl/T_FUNA_USER_MODIFY.do",
+            "type": "set",
+            "params": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "dataSize": 40
+                },
+                {
+                    "name": "ACCOUNTID",
+                    "dataType": "String",
+                    "caption": "登录帐号",
+                    "dataSize": 40
+                },
+                {
+                    "name": "PASSWORD",
+                    "dataType": "String",
+                    "caption": "密码",
+                    "dataSize": 200
+                },
+                {
+                    "name": "ACCOUNTNAME",
+                    "dataType": "String",
+                    "caption": "昵称",
+                    "dataSize": 50
+                },
+                {
+                    "name": "EMAIL",
+                    "dataType": "String",
+                    "caption": "邮箱",
+                    "dataSize": 100
+                },
+                {
+                    "name": "CELLPHONE",
+                    "dataType": "String",
+                    "caption": "手机",
+                    "dataSize": 20
+                },
+                {
+                    "name": "USERTYPE",
+                    "dataType": "String",
+                    "caption": "用户类型",
+                    "dataSize": 40
+                },
+                {
+                    "name": "USERSTATE",
+                    "dataType": "String",
+                    "caption": "用户状态",
+                    "dataSize": 20
+                },
+                {
+                    "name": "CREATEUSER",
+                    "dataType": "String",
+                    "caption": "添加者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "MODIFYUSER",
+                    "dataType": "String",
+                    "caption": "修改者",
+                    "dataSize": 40
+                },
+                {
+                    "name": "TJRQ",
+                    "dataType": "Timestamp",
+                    "caption": "添加日期",
+                    "dataSize": 7
+                },
+                {
+                    "name": "XGRQ",
+                    "dataType": "Timestamp",
+                    "caption": "修改日期",
+                    "dataSize": 7
+                }
+            ]
+        },
+        {
+            "name": "T_FUNA_USER_DELETE",
+            "modelName": "dataModel.T_FUNA_USER.onlyKey",
+            "appName": "funauthapp",
+            "url": "yhgl/T_FUNA_USER_DELETE.do",
+            "type": "set",
+            "params": [
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "用户ID",
+                    "dataSize": 40
+                }
+            ]
+        }
+    ],
+    "routes": {},
+    "code": "0",
+    "datas": {}
+}

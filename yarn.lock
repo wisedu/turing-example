@@ -13,6 +13,13 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
+"@riophae/vue-treeselect@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@riophae/vue-treeselect/-/vue-treeselect-0.0.29.tgz#113d074e8a3882dd333672cd47d6dbe5af315daf"
+  dependencies:
+    easings-css "^1.0.0"
+    fuzzysearch "^1.0.3"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -1048,6 +1055,19 @@ bh-iview@^1.2.2:
     tinycolor2 "^1.4.1"
     v-click-outside-x "^3.0.0"
 
+bh-iview@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/bh-iview/-/bh-iview-1.3.0.tgz#a65e9b5bbb0d72f2de66df9469b71b8f1b722ee6"
+  dependencies:
+    async-validator "^1.8.2"
+    deepmerge "^2.1.0"
+    element-resize-detector "^1.1.14"
+    js-calendar "^1.2.3"
+    lodash.throttle "^4.1.1"
+    popper.js "^1.14.1"
+    tinycolor2 "^1.4.1"
+    v-click-outside-x "^3.0.0"
+
 bh-mint-ui2@^1.1.43:
   version "1.1.43"
   resolved "https://registry.yarnpkg.com/bh-mint-ui2/-/bh-mint-ui2-1.1.43.tgz#b1451f0ccb5d74eb6a1f35e182009f0326cb7a7a"
@@ -2071,6 +2091,10 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+easings-css@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/easings-css/-/easings-css-1.0.0.tgz#dde569003bb7a4a0c0b77878f5db3e0be5679c81"
+
 editions@^1.3.3:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/editions/-/editions-1.3.4.tgz#3662cb592347c3168eb8e498a0ff73271d67f50b"
@@ -2597,6 +2621,10 @@ fsevents@^1.1.2:
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+
+fuzzysearch@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/fuzzysearch/-/fuzzysearch-1.0.3.tgz#dffc80f6d6b04223f2226aa79dd194231096d008"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -5857,6 +5885,16 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
+tg-turing-antd@^1.4.12:
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.4.12.tgz#dadd16f23284a6be0cac89eacb301edee9c535c0"
+  dependencies:
+    "@riophae/vue-treeselect" "^0.0.29"
+    bh-iview "^1.3.0"
+    tg-turing "^1.8.17"
+    uuid "^3.2.1"
+    vue "^2.5.16"
+
 tg-turing-iview@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/tg-turing-iview/-/tg-turing-iview-1.2.5.tgz#343ce31a92a0f765a99c991cbec4238b19369fe4"
@@ -5881,6 +5919,15 @@ tg-turing-mint@^1.2.3:
 tg-turing@^1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.7.2.tgz#13532ea9841886b7f64df555e91d422035e8f57c"
+  dependencies:
+    axios "^0.18.0"
+    core-js "^2.5.7"
+    moment "^2.22.1"
+    vue "^2.5.16"
+
+tg-turing@^1.8.17, tg-turing@^1.8.18:
+  version "1.8.18"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.8.18.tgz#b43e3d5f6f9687a70096ce20abaa80762403cb62"
   dependencies:
     axios "^0.18.0"
     core-js "^2.5.7"

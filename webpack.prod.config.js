@@ -4,12 +4,12 @@ const path = require('path');
 const cleanWebpackPlugin = require("clean-webpack-plugin");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require('webpack');
+let packageName = "funauthapp";
 
 module.exports = {
     entry: {
         // 多入口文件
-        main: './src/index.js',
-        funauth: './src/funauth.js'
+        "funauthapp": './src/index.js',
     },
     optimization: {
         splitChunks: {
@@ -34,7 +34,11 @@ module.exports = {
         path:path.resolve(__dirname, 'dist'),
         // 打包多出口文件
         // 生成 a.bundle.js  b.bundle.js  jquery.bundle.js
-        filename: './js/[name].bundle.js'
+        filename: './[name].min.js',
+        library: packageName,
+        libraryTarget: 'umd',
+        umdNamedDefine: true,
+        sourceMapFilename:"[file].map"
     },
     module:{
         rules:[
@@ -55,6 +59,16 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
             }
         ]
     },
@@ -63,24 +77,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: 'app.[name].css',
+            filename: '[name].min.css',
             // chunkFilename: 'app.[contenthash:12].css'  // use contenthash *
-            chunkFilename: 'app.[name].css'
+            chunkFilename: '[name].min.css'
         }),
         new VueLoaderPlugin(),
-        new htmlWebpackPlugin({
-            filename: "index.html",
-            title: "main",
-            chunks: ["vendor","commons",'main'],  // 按需引入对应名字的js文件
-            template: "./src/index.html"
-        }),
-        new htmlWebpackPlugin({
-            filename: "funauth.html",
-            title: "funauth",
-            chunks: ["vendor","commons",'funauth'],  // 按需引入对应名字的js文件
-            template: "./src/funauth.html"
-        }),
-
     ],
     resolve: {  //导入的时候不用写拓展名
         extensions: [' ', '.js', '.json', '.vue', '.scss', '.css'],
@@ -88,28 +89,6 @@ module.exports = {
             vue: 'vue/dist/vue.js',
         }
     },
-    watchOptions: {
-        ignored: /node_modules/,
-        aggregateTimeout: 300,//防止重复保存频繁重新编译,300ms内重复保存不打包
-        poll: 1000  //每秒询问的文件变更的次数
-    },
-    devServer:{
-        inline: true,
-        compress: true,
-        host: '127.0.0.1',
-        port: 2500,
-        historyApiFallback: true,
-        proxy: {
-            "/emap": {
-                target: {
-                    "host": "172.16.40.76",
-                    "protocol": 'http://',
-                    "port": 8080,//端口
-                },
-                // ignorePath: true,
-                changeOrigin: true,//必配
-                secure: false
-            }
-        }
-    }
+    externals: ["tg-turing"],
+    devtool: 'source-map'
 }
