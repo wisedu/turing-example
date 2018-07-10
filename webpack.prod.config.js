@@ -2,43 +2,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path');
 const cleanWebpackPlugin = require("clean-webpack-plugin");
-const htmlWebpackPlugin = require("html-webpack-plugin");
-const webpack = require('webpack');
-let packageName = "funauthapp";
+let packageName = "wisedu-vue";
 
 module.exports = {
-    entry: {
-        // 多入口文件
-        "funauthapp": './src/index.js',
-    },
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                commons: {
-                    chunks: 'initial',
-                    name: 'commons',
-                    minChunks: 2,
-                    maxInitialRequests: 5,
-                    minSize: 0
-                },
-                vendor:{ // 抽离第三插件
-                    test:/node_modules/,
-                    chunks:'initial',
-                    name:'vendor',
-                    priority:10
-                }
-            }
-        }
-    },
+    entry: ["./entry.js"],
     output: {
         path:path.resolve(__dirname, 'dist'),
         // 打包多出口文件
         // 生成 a.bundle.js  b.bundle.js  jquery.bundle.js
-        filename: './[name].min.js',
-        library: packageName,
-        libraryTarget: 'umd',
-        umdNamedDefine: true,
-        sourceMapFilename:"[file].map"
+        filename: `./${packageName}.min.js`,
+        sourceMapFilename: `${packageName}.js.map`
     },
     module:{
         rules:[
@@ -60,16 +33,11 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader']
             },
-            {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                  loader: 'babel-loader',
-                  options: {
-                    presets: ['@babel/preset-env']
-                  }
-                }
-            }
+            // {
+            //     test: /\.js$/,
+            //     exclude: /(node_modules|bower_components)/,
+            //     use: 'babel-loader'
+            // }
         ]
     },
     plugins:[
@@ -77,9 +45,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: '[name].min.css',
+            filename: `${packageName}.min.css`,
             // chunkFilename: 'app.[contenthash:12].css'  // use contenthash *
-            chunkFilename: '[name].min.css'
+            chunkFilename: `${packageName}.min.css`
         }),
         new VueLoaderPlugin(),
     ],
@@ -87,8 +55,10 @@ module.exports = {
         extensions: [' ', '.js', '.json', '.vue', '.scss', '.css'],
         alias: {
             vue: 'vue/dist/vue.js',
+            vuex: 'vuex/dist/vuex.js',
+            "vue-router": 'vue-router/dist/vue-router.js',
         }
     },
-    externals: ["tg-turing"],
+    // externals: ["vue"],
     devtool: 'source-map'
 }
