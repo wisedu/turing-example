@@ -11,6 +11,8 @@ import tgTuringAntd from 'tg-turing-antd';
 Vue.use(tgTuringAntd);
 // tgTuringAntd.init();
 
+// tgTuringAntd.defaults.antd.
+
 Vue.directive('tg-funckey', {
     inserted: function(el,binding) {
         let authkeys = [];
