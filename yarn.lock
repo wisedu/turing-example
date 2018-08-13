@@ -1101,9 +1101,9 @@ bh-iview@^1.0.1:
     popper.js "^1.14.1"
     tinycolor2 "^1.4.1"
 
-bh-iview@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/bh-iview/-/bh-iview-1.3.0.tgz#a65e9b5bbb0d72f2de66df9469b71b8f1b722ee6"
+bh-iview@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/bh-iview/-/bh-iview-1.3.1.tgz#d6277f7843a0bd176172b8ddb275f3a8cba34031"
   dependencies:
     async-validator "^1.8.2"
     deepmerge "^2.1.0"
@@ -5926,17 +5926,17 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-turing-antd@^1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.8.3.tgz#0c6072fa881d487cb7f0e12bd48be0fd19b9da58"
+tg-turing-antd@^1.12.9:
+  version "1.12.9"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.12.9.tgz#776c2f3e7f3c07815afc2dc19f62c05dfdf1891d"
   dependencies:
-    bh-iview "^1.3.0"
-    tg-turing "^1.11.11"
+    bh-iview "^1.3.1"
+    tg-turing "^1.16.0"
     vue "^2.5.16"
 
-tg-turing@^1.11.11:
-  version "1.11.11"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.11.11.tgz#39ca36e2892393ca72cd46ffa8b4447d3eae9490"
+tg-turing@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.16.0.tgz#093165921a20c236eee186182e76c534af9e6e4a"
   dependencies:
     accounting-js "^1.1.1"
     axios "^0.18.0"

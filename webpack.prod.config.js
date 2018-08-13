@@ -5,13 +5,16 @@ const cleanWebpackPlugin = require("clean-webpack-plugin");
 let packageName = "wisedu-vue";
 
 module.exports = {
-    entry: ["./entry.js"],
+    entry: {
+        pc:"./pc.js",
+        mobile:"./mobile.js"
+    },
     output: {
         path:path.resolve(__dirname, 'dist'),
         // 打包多出口文件
         // 生成 a.bundle.js  b.bundle.js  jquery.bundle.js
-        filename: `./${packageName}.min.js`,
-        sourceMapFilename: `${packageName}.js.map`
+        filename: `./${packageName}.[name].min.js`,
+        sourceMapFilename: `${packageName}.[name].js.map`
     },
     module:{
         rules:[
@@ -45,9 +48,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: `${packageName}.min.css`,
+            filename: `${packageName}.[name].min.css`,
             // chunkFilename: 'app.[contenthash:12].css'  // use contenthash *
-            chunkFilename: `${packageName}.min.css`
+            chunkFilename: `${packageName}.[name].min.css`
         }),
         new VueLoaderPlugin(),
     ],
