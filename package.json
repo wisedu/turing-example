@@ -7,8 +7,8 @@
     "axios": "^0.18.0",
     "bh-iview": "^1.0.1",
     "core-js": "3.0.0-beta.3",
-    "tg-turing": "^1.16.0",
-    "tg-turing-antd": "^1.12.9",
+    "tg-turing": "^1.16.5",
+    "tg-turing-antd": "^1.12.16",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
