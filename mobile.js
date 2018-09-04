@@ -11,14 +11,16 @@ window.VueRouter = VueRouter;
 import tgTuring from 'tg-turing';
 Vue.use(tgTuring);
 window["tg-turing"] = tgTuring;
-import tgTuringAntd from 'tg-turing-antd';
-Vue.use(tgTuringAntd);
-
-import 'core-js/features/array';
-import 'core-js/features/string';
-import 'core-js/features/promise';
+import tgFormDidi from 'tg-form-didi';
+Vue.use(tgFormDidi);
+import initMixinSdk from 'bh-mixin-sdk';
+window.initMixinSdk = initMixinSdk;
+// import 'core-js/features/array';
+// import 'core-js/features/string';
+// import 'core-js/features/promise';
 
 
 import 'tg-turing/dist/css/default/tg-turing.min.css';
 import 'tg-turing/dist/style/default/tg-turing.css';
-import 'tg-turing-antd/dist/tg-turing-antd.min.css';
+import 'tg-form-didi/dist/tg-turing-didi.min.css';
+import 'tg-ui/lib/index.css';
