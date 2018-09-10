@@ -8,8 +8,8 @@
     "bh-iview": "^2.0.1",
     "core-js": "3.0.0-beta.3",
     "tg-form-didi": "^0.0.5",
-    "tg-turing": "^1.16.18",
-    "tg-turing-antd": "^1.12.31",
+    "tg-turing": "^1.18.2",
+    "tg-turing-antd": "^1.14.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -40,6 +40,6 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --mode development",
-    "build": "yarn add tg-turing && yarn add tg-turing-antd && webpack --config webpack.prod.config.js --mode production"
+    "build": "yarn add tg-turing && yarn add tg-turing-antd && webpack --config webpack.prod.config.js --mode development"
   }
 }

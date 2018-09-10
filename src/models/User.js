@@ -34,7 +34,7 @@ export default class extends DataAdapter{
             "默认查询": {
             }
         }
-        this.actions.find.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_QUERY.do";
+        this.actions.findAll.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_QUERY.do";
         this.actions.save.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_MODIFY.do";
         this.actions.delete.url = "/emap/sys/funauthapp/modules/yhgl/T_FUNA_USER_DELETE.d";
 
