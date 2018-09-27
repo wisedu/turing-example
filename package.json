@@ -7,9 +7,10 @@
     "axios": "^0.18.0",
     "bh-iview": "^2.0.1",
     "core-js": "3.0.0-beta.3",
+    "formdata-polyfill": "^3.0.12",
     "tg-form-didi": "^0.0.5",
-    "tg-turing": "^1.18.2",
-    "tg-turing-antd": "^1.14.2",
+    "tg-turing": "^1.21.11",
+    "tg-turing-antd": "^1.16.13",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -34,6 +35,7 @@
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-loader": "^15.4.1",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.7.0",
     "webpack-cli": "^2.1.2",
     "webpack-dev-server": "^3.1.4"

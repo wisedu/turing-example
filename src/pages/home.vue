@@ -1,6 +1,6 @@
 <template>
     <div>
-        <tg-form :fields="fields" :type="type" :column=4 v-model="data" displayFieldFormat="_DISPLAY">
+        <!-- <tg-form :fields="fields" :type="type" :column=4 v-model="data" displayFieldFormat="_DISPLAY">
             <div slot="CYM">
                 <ul id="sortable">
                     <li class="ui-state-default">Item 1</li>
@@ -25,18 +25,21 @@
                     <li class="ui-state-default">Item 7</li>
                 </ul>
             </div>
-        </tg-form>
+        </tg-form> -->
+        <Upload action="//jsonplaceholder.typicode.com/posts/">
+            <Button icon="ios-cloud-upload-outline">Upload files</Button>
+        </Upload>
     </div>
 </template>
 
 <script>
-import Student from "../models/Student";
-let inst = new Student();
+// import Student from "../models/Student";
+// let inst = new Student();
 export default {
     data(){
         return {
-            fields: inst.view("默认表单:form"),
-            fields_scd: inst.view("平铺表单:form"),
+            // fields: inst.view("默认表单:form"),
+            // fields_scd: inst.view("平铺表单:form"),
             param:{
                 append:"11"
             },
