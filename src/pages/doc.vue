@@ -3,7 +3,7 @@
         <table>
             <tr>
                 <td>
-                    <tg-field :type="type" ></tg-field>
+                    <tg-field></tg-field>
                 </td>
                 <td></td>
                 <td></td>
