@@ -5,7 +5,8 @@ import iView from 'bh-iview';
 Vue.use(iView);
 import tgTuring from 'tg-turing';
 Vue.use(tgTuring);
-window["tg-turing"] = tgTuring;
+
+// window["tg-turing"] = tgTuring;
 
 import tgTuringAntd from 'tg-turing-antd';
 Vue.use(tgTuringAntd);
@@ -27,7 +28,7 @@ Vue.directive('tg-funckey', {
     }
 })
 
-
+tgTuring.defaults.test = function(){alert(1)};
 tgTuring.axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 tgTuring.axios.defaults.transformRequest = [function (data) {
     var ret = []
@@ -89,7 +90,7 @@ tgTuring.defaults.getDictTreeData[0] = function (dict, params, callback){
         }
     })
 };
-tgTuring.defaults.getDictTreeOneData[0] = function (dict, params, callback){
+tgTuring.defaults.getDictTreeDataAsync[0] = function (dict, params, callback){
     tgTuring.utils.Post(dict.url, {"id": params.key,"checkParent": true}).then(function(result) {
         var datas;
         try{

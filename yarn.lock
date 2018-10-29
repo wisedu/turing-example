@@ -6088,13 +6088,13 @@ tg-form-didi@^0.0.5:
     tg-ui "0.0.14"
     vue "^2.5.16"
 
-tg-turing-antd@^1.21.12:
-  version "1.21.12"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.21.12.tgz#c891d56abad919e5498a2afccc538b98742c2685"
+tg-turing-antd@^1.22.2:
+  version "1.22.2"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.22.2.tgz#5379c92876a0790ef1d0aada0a39aba8bc2ed5bc"
   dependencies:
     bh-iview "^2.0.5"
     fin-hypergrid "^3.0.2"
-    tg-turing "^1.25.7"
+    tg-turing "^1.26.1"
     vue "^2.5.17"
     vue-upload-component "^2.8.11"
 
@@ -6108,9 +6108,9 @@ tg-turing@^1.16.12:
     moment "^2.22.1"
     uuid "^3.3.2"
 
-tg-turing@^1.25.7:
-  version "1.25.7"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.25.7.tgz#3643e4239a82252c1872ed821dd1a2010eb2d67b"
+tg-turing@^1.26.1:
+  version "1.26.1"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.26.1.tgz#52a9a9cd6624b389970df40eb5d0c13954b2cf36"
   dependencies:
     accounting-js "^1.1.1"
     axios "^0.18.0"
