@@ -6128,12 +6128,12 @@ tg-form-didi@^0.0.5:
     tg-ui "0.0.14"
     vue "^2.5.16"
 
-tg-turing-antd@^1.25.48:
-  version "1.25.48"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.25.48.tgz#31468afb70d22c95542611999f959b94d79ffb6f"
+tg-turing-antd@^1.25.55:
+  version "1.25.55"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.25.55.tgz#409002a3ca2bc70a36483ecfc3149e1705b6bfa7"
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.28.34"
+    tg-turing "^1.28.41"
     tiptap "^0.19.0"
     tiptap-extensions "^0.21.0"
     vue "^2.5.17"
@@ -6149,19 +6149,9 @@ tg-turing@^1.16.12:
     moment "^2.22.1"
     uuid "^3.3.2"
 
-tg-turing@^1.28.34:
-  version "1.28.34"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.28.34.tgz#5588a2eb80eedb67c6c3ebae3ad80d74ca3b9d1d"
-  dependencies:
-    accounting-js "^1.1.1"
-    axios "^0.18.0"
-    core-js "^2.5.7"
-    moment "^2.22.1"
-    uuid "^3.3.2"
-
-tg-turing@^1.28.35:
-  version "1.28.35"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.28.35.tgz#dce09fe3beac11504eaf165c1f460b9e7effd9f9"
+tg-turing@^1.28.41:
+  version "1.28.41"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.28.41.tgz#2fbd9b9e4dfef19d7889efe4269cc8b1d8c990f4"
   dependencies:
     accounting-js "^1.1.1"
     axios "^0.18.0"
