@@ -4,13 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "axios": "^0.18.0",
     "bh-iview": "^2.0.1",
     "core-js": "3.0.0-beta.3",
     "formdata-polyfill": "^3.0.12",
     "tg-form-didi": "^0.0.5",
-    "tg-turing": "^1.28.49",
-    "tg-turing-antd": "^1.25.61",
+    "tg-turing": "^1.28.50",
+    "tg-turing-antd": "^1.25.68",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
