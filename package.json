@@ -10,8 +10,8 @@
     "core-js": "3.0.0-beta.3",
     "formdata-polyfill": "^3.0.12",
     "tg-form-didi": "^0.0.5",
-    "tg-turing": "^1.28.57",
-    "tg-turing-antd": "^1.26.9",
+    "tg-turing": "^1.28.61",
+    "tg-turing-antd": "^1.26.24",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
