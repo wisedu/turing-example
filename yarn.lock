@@ -409,15 +409,15 @@ async-validator@^1.8.5:
   dependencies:
     babel-runtime "6.x"
 
-async@^1.5.0, async@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
-
-async@^2.4.1, async@^2.6.0:
+async@*, async@^2.4.1, async@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
   dependencies:
     lodash "^4.17.10"
+
+async@^1.5.0, async@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -1681,6 +1681,10 @@ colormin@^1.0.5:
     css-color-names "0.0.4"
     has "^1.0.1"
 
+colors@*:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.3.tgz#39e005d546afe01e01f9c4ca8fa50f686a01205d"
+
 colors@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
@@ -2454,6 +2458,10 @@ etag@~1.8.1:
 eventemitter3@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
+
+events@*:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/events/-/events-3.0.0.tgz#9a0a0dfaf62893d92b875b8f2698ca4114973e88"
 
 events@^1.0.0:
   version "1.1.1"
@@ -4101,9 +4109,13 @@ mamacro@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/mamacro/-/mamacro-0.0.3.tgz#ad2c9576197c9f1abf308d0787865bd975a3f3e4"
 
-mand-mobile@^1.5.4, mand-mobile@^1.5.6:
+mand-mobile@^1.5.6:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mand-mobile/-/mand-mobile-1.6.0.tgz#3c718906a7ba37dcf37d89c4ea65edc7039d6bb5"
+
+mand-mobile@^1.6.0:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/mand-mobile/-/mand-mobile-1.6.6.tgz#e887956b4b09dd952b94e119d396a1b30596744a"
 
 map-cache@^0.2.2:
   version "0.2.2"
@@ -4383,6 +4395,14 @@ move-concurrently@^1.0.1:
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+
+msbuild@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/msbuild/-/msbuild-1.0.3.tgz#ee77645cd0fc45a956ca58d7da06f3f16238bbed"
+  dependencies:
+    async "*"
+    colors "*"
+    events "*"
 
 multicast-dns-service-types@^1.1.0:
   version "1.1.0"
@@ -6386,33 +6406,33 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-form-didi@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.0.5.tgz#ec8e2675f99f88f38e2fe5fea6c3ccfcfb337b0c"
+tg-form-didi@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.0.10.tgz#c1b3b4ca328d042f1a48a407b7ef8955d45bd1d7"
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
     bh-mixin-sdk "^0.2.54"
     mand-mobile "^1.5.6"
-    tg-turing "^1.16.12"
-    tg-ui "0.0.14"
+    tg-turing "^1.29.1"
+    tg-ui "^0.0.21"
     vue "^2.5.16"
 
-tg-turing-antd@^1.26.24:
-  version "1.26.24"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.24.tgz#de7e3aa414c12c51aee41b7908c214fc87c4c308"
+tg-turing-antd@^1.26.26:
+  version "1.26.26"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.26.tgz#ae9748ccd317d6d2a8d75f6df3810919f3ff4dd3"
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.28.61"
+    tg-turing "^1.29.1"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
     vue "^2.5.17"
     vue-upload-component "^2.8.11"
 
-tg-turing@^1.16.12:
-  version "1.16.18"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.16.18.tgz#5ede7bf8e3d9d648f81fcd01a47e9c66e57a24df"
+tg-turing@^1.29.1:
+  version "1.29.1"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.29.1.tgz#d3dcc3f9a2b3bcfcd02212bef09d421f753bf4b3"
   dependencies:
     accounting-js "^1.1.1"
     axios "^0.18.0"
@@ -6420,23 +6440,13 @@ tg-turing@^1.16.12:
     moment "^2.22.1"
     uuid "^3.3.2"
 
-tg-turing@^1.28.61:
-  version "1.28.61"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.28.61.tgz#061406188c4b9919c6076a894f2cda2ab902f84f"
-  dependencies:
-    accounting-js "^1.1.1"
-    axios "^0.18.0"
-    core-js "^2.5.7"
-    moment "^2.22.1"
-    uuid "^3.3.2"
-
-tg-ui@0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/tg-ui/-/tg-ui-0.0.14.tgz#5c73d2d7adb6dcc5d43926d4dcbdda39b5b05c2a"
+tg-ui@^0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/tg-ui/-/tg-ui-0.0.21.tgz#d1e5825a21467f81c1a4f2b2dc38499e92c764f5"
   dependencies:
     compression-webpack-plugin "^1.1.11"
     eventsource-polyfill "^0.9.6"
-    mand-mobile "^1.5.4"
+    mand-mobile "^1.6.0"
     vant "^1.2.0"
     vue "^2.5.2"
     vue-router "^3.0.1"

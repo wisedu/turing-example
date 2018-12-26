@@ -23,4 +23,4 @@ window.initMixinSdk = initMixinSdk;
 import 'tg-turing/dist/css/default/tg-turing.min.css';
 import 'tg-turing/dist/style/default/tg-turing.css';
 import 'tg-form-didi/dist/tg-turing-didi.min.css';
-import 'tg-ui/lib/index.css';
+import 'tg-ui/lib/style.css';
