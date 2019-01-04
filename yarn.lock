@@ -9,9 +9,9 @@
     core-js "^2.5.7"
     regenerator-runtime "^0.11.1"
 
-"@babel/runtime@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0.tgz#adeb78fedfc855aa05bc041640f3f6f98e85424c"
+"@babel/runtime@^7.1.5":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
   dependencies:
     regenerator-runtime "^0.12.0"
 
@@ -35,6 +35,10 @@
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
+
+"@vant/icons@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@vant/icons/-/icons-1.0.3.tgz#3ea7455f986ba4e2e679ab6e1e46c525485c6aa2"
 
 "@vue/component-compiler-utils@^2.0.0":
   version "2.2.0"
@@ -1833,6 +1837,10 @@ core-js@3.0.0-beta.3:
 core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.0, core-js@^2.5.7:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+
+core-js@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.1.tgz#87416ae817de957a3f249b3b5ca475d4aaed6042"
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -6406,48 +6414,48 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-form-didi@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.0.10.tgz#c1b3b4ca328d042f1a48a407b7ef8955d45bd1d7"
+tg-form-didi@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.0.12.tgz#3cef0e46ce69a08ce100cb9185eadb515044f960"
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
     bh-mixin-sdk "^0.2.54"
     mand-mobile "^1.5.6"
-    tg-turing "^1.29.1"
-    tg-ui "^0.0.21"
+    tg-turing "^1.29.3"
+    tg-ui "^0.0.24"
     vue "^2.5.16"
 
-tg-turing-antd@^1.26.26:
-  version "1.26.26"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.26.tgz#ae9748ccd317d6d2a8d75f6df3810919f3ff4dd3"
+tg-turing-antd@^1.26.29:
+  version "1.26.29"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.29.tgz#b1043ddb5bc033b4e0ab24ae4d5793d08526b1bf"
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.29.1"
+    tg-turing "^1.29.3"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
     vue "^2.5.17"
     vue-upload-component "^2.8.11"
 
-tg-turing@^1.29.1:
-  version "1.29.1"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.29.1.tgz#d3dcc3f9a2b3bcfcd02212bef09d421f753bf4b3"
+tg-turing@^1.29.3:
+  version "1.29.3"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.29.3.tgz#1928b1c0b2b0fd55d2c7aca1cfa43c3f172d0a6e"
   dependencies:
     accounting-js "^1.1.1"
     axios "^0.18.0"
-    core-js "^2.5.7"
+    core-js "^2.6.1"
     moment "^2.22.1"
     uuid "^3.3.2"
 
-tg-ui@^0.0.21:
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/tg-ui/-/tg-ui-0.0.21.tgz#d1e5825a21467f81c1a4f2b2dc38499e92c764f5"
+tg-ui@^0.0.24:
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/tg-ui/-/tg-ui-0.0.24.tgz#1c344ab41aaad7f07e10f673d98ec78798babbe8"
   dependencies:
     compression-webpack-plugin "^1.1.11"
     eventsource-polyfill "^0.9.6"
     mand-mobile "^1.6.0"
-    vant "^1.2.0"
+    vant "^1.5.0"
     vue "^2.5.2"
     vue-router "^3.0.1"
     webpack-hot-middleware "^2.22.3"
@@ -6814,11 +6822,12 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/vant/-/vant-1.3.0.tgz#434954eacecdfdc2512ef9c3620176867a999ad5"
+vant@^1.5.0:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vant/-/vant-1.5.1.tgz#e3fbf05580a30446cf1326a6b080065e6bd080d5"
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.1.5"
+    "@vant/icons" "^1.0.3"
     vue-lazyload "1.2.3"
 
 vary@~1.1.2:

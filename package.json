@@ -10,9 +10,9 @@
     "core-js": "3.0.0-beta.3",
     "formdata-polyfill": "^3.0.12",
     "msbuild": "^1.0.3",
-    "tg-form-didi": "^0.0.10",
-    "tg-turing": "^1.29.1",
-    "tg-turing-antd": "^1.26.26",
+    "tg-form-didi": "^0.0.12",
+    "tg-turing": "^1.29.3",
+    "tg-turing-antd": "^1.26.29",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -44,7 +44,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --mode development",
-    "build": "yarn add tg-turing && yarn add tg-turing-antd && webpack --config webpack.prod.config.js --mode development",
+    "build": "yarn add tg-turing && yarn add tg-turing-antd && yarn add tg-form-didi && webpack --config webpack.prod.config.js --mode development",
     "webpack": "webpack --config webpack.prod.config.js --mode development"
   }
 }
