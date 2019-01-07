@@ -12,7 +12,7 @@
     "msbuild": "^1.0.3",
     "tg-form-didi": "^0.0.12",
     "tg-turing": "^1.29.3",
-    "tg-turing-antd": "^1.26.29",
+    "tg-turing-antd": "^1.26.33",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
