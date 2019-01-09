@@ -450,6 +450,13 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
+axios@0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
+  dependencies:
+    follow-redirects "^1.2.5"
+    is-buffer "^1.1.5"
+
 axios@^0.16.1:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.16.2.tgz#ba4f92f17167dfbab40983785454b9ac149c3c6d"
@@ -2062,7 +2069,7 @@ debug@2.6.9, debug@^2.1.2, debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0:
+debug@=3.1.0, debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -2784,6 +2791,12 @@ follow-redirects@^1.2.3:
   dependencies:
     debug "^3.1.0"
 
+follow-redirects@^1.2.5:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.6.1.tgz#514973c44b5757368bad8bddfe52f81f015c94cb"
+  dependencies:
+    debug "=3.1.0"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -2814,9 +2827,9 @@ format@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
 
-formdata-polyfill@^3.0.12:
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/formdata-polyfill/-/formdata-polyfill-3.0.12.tgz#43f8d9bad5408a57c4f801784526e8230b6e9f7a"
+formdata-polyfill@^3.0.13:
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/formdata-polyfill/-/formdata-polyfill-3.0.13.tgz#991321c83b7a760aaf3788f1b7bbbf77e85b09bb"
 
 forwarded@~0.1.2:
   version "0.1.2"
@@ -6414,9 +6427,9 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-form-didi@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.0.12.tgz#3cef0e46ce69a08ce100cb9185eadb515044f960"
+tg-form-didi@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.1.1.tgz#23ed8112801d758b63405666c419b1ee3df35ecd"
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
@@ -6426,12 +6439,12 @@ tg-form-didi@^0.0.12:
     tg-ui "^0.0.24"
     vue "^2.5.16"
 
-tg-turing-antd@^1.26.29:
-  version "1.26.29"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.29.tgz#b1043ddb5bc033b4e0ab24ae4d5793d08526b1bf"
+tg-turing-antd@^1.26.38:
+  version "1.26.38"
+  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.38.tgz#3805f4eecdff33489ad39fd1b47e10cc3e4d86ec"
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.29.3"
+    tg-turing "^1.30.1"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
@@ -6444,6 +6457,16 @@ tg-turing@^1.29.3:
   dependencies:
     accounting-js "^1.1.1"
     axios "^0.18.0"
+    core-js "^2.6.1"
+    moment "^2.22.1"
+    uuid "^3.3.2"
+
+tg-turing@^1.30.1:
+  version "1.30.1"
+  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.30.1.tgz#817b5d7aa3b4440c49b69b7536134141082622a7"
+  dependencies:
+    accounting-js "^1.1.1"
+    axios "0.17.1"
     core-js "^2.6.1"
     moment "^2.22.1"
     uuid "^3.3.2"
