@@ -6429,7 +6429,8 @@ textextensions@2:
 
 tg-form-didi@^0.1.1:
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/tg-form-didi/-/tg-form-didi-0.1.1.tgz#23ed8112801d758b63405666c419b1ee3df35ecd"
+  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.1.tgz#23ed8112801d758b63405666c419b1ee3df35ecd"
+  integrity sha512-rVwnIeBSq1mJnrxasTxz6TJVNvjD4D7t06973wfeLEwiuXU1p9sc1Bo0acUcQ5eyd0dAp5+HDtkdGuO7Rve3Vw==
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
@@ -6441,7 +6442,8 @@ tg-form-didi@^0.1.1:
 
 tg-turing-antd@^1.26.38:
   version "1.26.38"
-  resolved "https://registry.yarnpkg.com/tg-turing-antd/-/tg-turing-antd-1.26.38.tgz#3805f4eecdff33489ad39fd1b47e10cc3e4d86ec"
+  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.38.tgz#3805f4eecdff33489ad39fd1b47e10cc3e4d86ec"
+  integrity sha512-jwms6bVD1t6v6IzJImZok2xWc9TrDKDU2wUB53lA7H+0HA7wkY/g8KohTYQvSzXxX38DzukyAe/L0mpQ7NphjA==
   dependencies:
     bh-iview "^2.0.5"
     tg-turing "^1.30.1"
@@ -6463,7 +6465,19 @@ tg-turing@^1.29.3:
 
 tg-turing@^1.30.1:
   version "1.30.1"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.30.1.tgz#817b5d7aa3b4440c49b69b7536134141082622a7"
+  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.1.tgz#817b5d7aa3b4440c49b69b7536134141082622a7"
+  integrity sha512-HdEq37FfB345tPo6zTcf8ICVeeOvAoUheHdihWum8r2bvSjJBDQcMSW6YuCsV8gQKxytEHlV2LAHS8vbF56X6w==
+  dependencies:
+    accounting-js "^1.1.1"
+    axios "0.17.1"
+    core-js "^2.6.1"
+    moment "^2.22.1"
+    uuid "^3.3.2"
+
+tg-turing@^1.30.2:
+  version "1.30.2"
+  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.2.tgz#c11ca79e05f2999dbc38bd919813422bf5340b54"
+  integrity sha512-fqJ+mdanWj/pto2u4bHZIrPMq2N425LNF3BocaQZQH8zACebYrDkOxEu96/KG4jNqjJTBb1J6ICmfFyX/AVbeQ==
   dependencies:
     accounting-js "^1.1.1"
     axios "0.17.1"
