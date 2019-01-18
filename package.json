@@ -44,7 +44,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --mode development",
-    "build": "yarn add tg-turing && yarn add tg-turing-antd && yarn add tg-form-didi && webpack --config webpack.prod.config.js --mode development",
+    "build": "yarn add tg-turing && yarn add tg-turing-antd && yarn add tg-form-didi && node ./controller/check-tg-version.js && webpack --config webpack.prod.config.js --mode development && node ./controller/check-is-two-vue-include.js",
     "webpack": "webpack --config webpack.prod.config.js --mode development"
   }
 }
