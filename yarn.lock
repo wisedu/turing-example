@@ -6427,52 +6427,31 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-form-didi@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.1.tgz#23ed8112801d758b63405666c419b1ee3df35ecd"
-  integrity sha512-rVwnIeBSq1mJnrxasTxz6TJVNvjD4D7t06973wfeLEwiuXU1p9sc1Bo0acUcQ5eyd0dAp5+HDtkdGuO7Rve3Vw==
+tg-form-didi@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.3.tgz#f6d66eeac52ac27054ddbfa7cad43128ab089297"
+  integrity sha512-LNjy/B9rZRhIZohiZvdEQDTEy0WAI/xJLUzB8UwyLlALY9l37xXERSOkBd/J3tTmSl/qMIoI0zax0fyyiU9o4g==
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
     bh-mixin-sdk "^0.2.54"
     mand-mobile "^1.5.6"
-    tg-turing "^1.29.3"
+    tg-turing "^1.30.2"
     tg-ui "^0.0.24"
     vue "^2.5.16"
 
-tg-turing-antd@^1.26.38:
-  version "1.26.38"
-  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.38.tgz#3805f4eecdff33489ad39fd1b47e10cc3e4d86ec"
-  integrity sha512-jwms6bVD1t6v6IzJImZok2xWc9TrDKDU2wUB53lA7H+0HA7wkY/g8KohTYQvSzXxX38DzukyAe/L0mpQ7NphjA==
+tg-turing-antd@^1.26.55:
+  version "1.26.55"
+  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.55.tgz#27b2518a7ec14758dbf7f2233e09c96887edac85"
+  integrity sha512-QhAFX4jbWAw9VZwxOBybW4VYbojubg49kJ+u8Bf+8IigQSvias97ZtL6fURVXMBuQhV5M0odaM0tC5DT38k6uQ==
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.30.1"
+    tg-turing "^1.30.2"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
-    vue "^2.5.17"
+    vue "^2.5.21"
     vue-upload-component "^2.8.11"
-
-tg-turing@^1.29.3:
-  version "1.29.3"
-  resolved "https://registry.yarnpkg.com/tg-turing/-/tg-turing-1.29.3.tgz#1928b1c0b2b0fd55d2c7aca1cfa43c3f172d0a6e"
-  dependencies:
-    accounting-js "^1.1.1"
-    axios "^0.18.0"
-    core-js "^2.6.1"
-    moment "^2.22.1"
-    uuid "^3.3.2"
-
-tg-turing@^1.30.1:
-  version "1.30.1"
-  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.1.tgz#817b5d7aa3b4440c49b69b7536134141082622a7"
-  integrity sha512-HdEq37FfB345tPo6zTcf8ICVeeOvAoUheHdihWum8r2bvSjJBDQcMSW6YuCsV8gQKxytEHlV2LAHS8vbF56X6w==
-  dependencies:
-    accounting-js "^1.1.1"
-    axios "0.17.1"
-    core-js "^2.6.1"
-    moment "^2.22.1"
-    uuid "^3.3.2"
 
 tg-turing@^1.30.2:
   version "1.30.2"
@@ -6967,9 +6946,14 @@ vue@^2.5.16:
   version "2.5.16"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
 
-vue@^2.5.17, vue@^2.5.2:
+vue@^2.5.2:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
+
+vue@^2.5.21, vue@^2.5.22:
+  version "2.5.22"
+  resolved "https://registry.npmjs.org/vue/-/vue-2.5.22.tgz#3bf88041af08b8539c37b268b70ca79245e9cc30"
+  integrity sha512-pxY3ZHlXNJMFQbkjEgGVMaMMkSV1ONpz+4qB55kZuJzyJOhn6MSy/YZdzhdnumegNzVTL/Dn3Pp4UrVBYt1j/g==
 
 vuex@^3.0.1:
   version "3.0.1"
