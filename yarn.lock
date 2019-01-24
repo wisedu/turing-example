@@ -6427,23 +6427,23 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-form-didi@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.3.tgz#f6d66eeac52ac27054ddbfa7cad43128ab089297"
-  integrity sha512-LNjy/B9rZRhIZohiZvdEQDTEy0WAI/xJLUzB8UwyLlALY9l37xXERSOkBd/J3tTmSl/qMIoI0zax0fyyiU9o4g==
+tg-form-didi@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.5.tgz#193d491e0ae06e33e92f1ea64a242d6f42505805"
+  integrity sha512-HfpS8J3+0bSdt0IkIJDVAi1l5E1shBmvMj9cXIR/MxFenrZHERnJjqfaEHf8YzEx3UgIE2eCuMn38v7jWzGCbg==
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
     bh-mixin-sdk "^0.2.54"
     mand-mobile "^1.5.6"
     tg-turing "^1.30.2"
-    tg-ui "^0.0.24"
-    vue "^2.5.16"
+    tg-ui "^0.0.26"
+    vue "^2.5.21"
 
-tg-turing-antd@^1.26.55:
-  version "1.26.55"
-  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.55.tgz#27b2518a7ec14758dbf7f2233e09c96887edac85"
-  integrity sha512-QhAFX4jbWAw9VZwxOBybW4VYbojubg49kJ+u8Bf+8IigQSvias97ZtL6fURVXMBuQhV5M0odaM0tC5DT38k6uQ==
+tg-turing-antd@^1.26.58:
+  version "1.26.58"
+  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.58.tgz#0f661c76c2c6709aa868bc0b394e24fcd2b3b46c"
+  integrity sha512-NOx1vfY55blYrFE3rffxyZUYodXXgKaoC2YMsCNN2TMOvezfPEmcGeIF59Ay9ayGRnaWNQMmq6dqZKv74aQMQw==
   dependencies:
     bh-iview "^2.0.5"
     tg-turing "^1.30.2"
@@ -6464,9 +6464,10 @@ tg-turing@^1.30.2:
     moment "^2.22.1"
     uuid "^3.3.2"
 
-tg-ui@^0.0.24:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/tg-ui/-/tg-ui-0.0.24.tgz#1c344ab41aaad7f07e10f673d98ec78798babbe8"
+tg-ui@^0.0.26:
+  version "0.0.26"
+  resolved "https://registry.npmjs.org/tg-ui/-/tg-ui-0.0.26.tgz#6859e68cbdc413dc5224bb0d1012a7778b39817c"
+  integrity sha512-4PKSf93i/bzJNrr3ziJN5h2iw14YHwzZUV2pGy4eyIZzg2y0FfBGfqsvGjfRZg9oBilGRCdzkvA0OQf4ExuQzg==
   dependencies:
     compression-webpack-plugin "^1.1.11"
     eventsource-polyfill "^0.9.6"
@@ -6941,10 +6942,6 @@ vue-template-es2015-compiler@^1.6.0:
 vue-upload-component@^2.8.11:
   version "2.8.11"
   resolved "https://registry.yarnpkg.com/vue-upload-component/-/vue-upload-component-2.8.11.tgz#7dd207144ba9502760aecf77d42e4ab072b94b07"
-
-vue@^2.5.16:
-  version "2.5.16"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
 
 vue@^2.5.2:
   version "2.5.17"
