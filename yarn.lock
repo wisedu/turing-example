@@ -6427,10 +6427,10 @@ textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
 
-tg-form-didi@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.5.tgz#193d491e0ae06e33e92f1ea64a242d6f42505805"
-  integrity sha512-HfpS8J3+0bSdt0IkIJDVAi1l5E1shBmvMj9cXIR/MxFenrZHERnJjqfaEHf8YzEx3UgIE2eCuMn38v7jWzGCbg==
+tg-form-didi@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.npmjs.org/tg-form-didi/-/tg-form-didi-0.1.6.tgz#eecb59bc073e26636fc1b8603869c377683848a7"
+  integrity sha512-e+hvXrF8O+isflVjf/fkJfBoLA01F3qrtKM+wy/34IbLmLpklithgvXZId0QfF16DKJMuybUBqgNJTkoB+I9RA==
   dependencies:
     async-validator "^1.8.5"
     axios "^0.16.1"
@@ -6440,13 +6440,13 @@ tg-form-didi@^0.1.5:
     tg-ui "^0.0.26"
     vue "^2.5.21"
 
-tg-turing-antd@^1.26.58:
-  version "1.26.58"
-  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.58.tgz#0f661c76c2c6709aa868bc0b394e24fcd2b3b46c"
-  integrity sha512-NOx1vfY55blYrFE3rffxyZUYodXXgKaoC2YMsCNN2TMOvezfPEmcGeIF59Ay9ayGRnaWNQMmq6dqZKv74aQMQw==
+tg-turing-antd@^1.26.66:
+  version "1.26.66"
+  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.66.tgz#1b75f9d35f11b0e1cd522f00c6565b945f2470b3"
+  integrity sha512-OH+0NyMV5fg4UJqcASEPB5EWXjtwGYdSqSVH8tQwCmj32u+CjwtYDVwnGk0L2aQlZKnHUYhjMImxlF53jeyunw==
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.30.2"
+    tg-turing "^1.30.6"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
@@ -6457,6 +6457,17 @@ tg-turing@^1.30.2:
   version "1.30.2"
   resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.2.tgz#c11ca79e05f2999dbc38bd919813422bf5340b54"
   integrity sha512-fqJ+mdanWj/pto2u4bHZIrPMq2N425LNF3BocaQZQH8zACebYrDkOxEu96/KG4jNqjJTBb1J6ICmfFyX/AVbeQ==
+  dependencies:
+    accounting-js "^1.1.1"
+    axios "0.17.1"
+    core-js "^2.6.1"
+    moment "^2.22.1"
+    uuid "^3.3.2"
+
+tg-turing@^1.30.6:
+  version "1.30.6"
+  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.6.tgz#bbceb3df1d3fa1488ebb799bc84d7f825df78107"
+  integrity sha512-LJcp5Ivi0xs9GpO4Id9VJsB5B6VqkthWYaNq/aK8kWgTu2yyEaM5zDyJ8i9pnXYeCyDMGWAd8tw36+bTmYzdnw==
   dependencies:
     accounting-js "^1.1.1"
     axios "0.17.1"
