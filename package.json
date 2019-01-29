@@ -11,8 +11,8 @@
     "formdata-polyfill": "^3.0.13",
     "msbuild": "^1.0.3",
     "tg-form-didi": "^0.1.6",
-    "tg-turing": "^1.30.7",
-    "tg-turing-antd": "^1.26.70",
+    "tg-turing": "^1.30.11",
+    "tg-turing-antd": "^1.26.75",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

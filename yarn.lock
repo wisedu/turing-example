@@ -6440,23 +6440,23 @@ tg-form-didi@^0.1.6:
     tg-ui "^0.0.26"
     vue "^2.5.21"
 
-tg-turing-antd@^1.26.70:
-  version "1.26.70"
-  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.70.tgz#a7e4dc61de46572de145fc3828ce30d20d3d4835"
-  integrity sha512-8nhlxw3+MxNyvi2IuSijlpCjpRqYjp4RqwmipOgLc1JNppgj3kHOCQWumY9Ink689JQb7SXjGBzQw9UeO252mQ==
+tg-turing-antd@^1.26.75:
+  version "1.26.75"
+  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.75.tgz#913cd3a1bb99b2ec0c987e958413c20d0ffb8006"
+  integrity sha512-Q3sULQ80N/9QsiKWOvrsJbGbPTJRS5KICCtE8NCokRgy/LjuYYSits8Tv8gGcRuRG8kHlklT2Agvt9Ni9dF7fw==
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.30.7"
+    tg-turing "^1.30.11"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
     vue "^2.5.21"
     vue-upload-component "^2.8.11"
 
-tg-turing@^1.30.2:
-  version "1.30.2"
-  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.2.tgz#c11ca79e05f2999dbc38bd919813422bf5340b54"
-  integrity sha512-fqJ+mdanWj/pto2u4bHZIrPMq2N425LNF3BocaQZQH8zACebYrDkOxEu96/KG4jNqjJTBb1J6ICmfFyX/AVbeQ==
+tg-turing@^1.30.11:
+  version "1.30.11"
+  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.11.tgz#4186877527c9c1403bc07d7c0f6771f208aa0b1a"
+  integrity sha512-pzunnOc/RiRoIgkHiU3MJWll/0SctnLicE9IuDXfKIVyPz2ZoxpYRy99pf2QxJofwo3MUiEM+BE8DR5pzh+JMw==
   dependencies:
     accounting-js "^1.1.1"
     axios "0.17.1"
@@ -6464,10 +6464,10 @@ tg-turing@^1.30.2:
     moment "^2.22.1"
     uuid "^3.3.2"
 
-tg-turing@^1.30.7:
-  version "1.30.7"
-  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.7.tgz#36d8d2f2621499fb4f8481ce5e066687958671a5"
-  integrity sha512-lGAdKZ1AGdqwQ7SOrrcY15ahT4XWj+X9x1iqwVcmp0Iju37DX6F9XmSeYuvOcpDz+dQ2YAUz2nuPq2d6vsrngA==
+tg-turing@^1.30.2:
+  version "1.30.2"
+  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.2.tgz#c11ca79e05f2999dbc38bd919813422bf5340b54"
+  integrity sha512-fqJ+mdanWj/pto2u4bHZIrPMq2N425LNF3BocaQZQH8zACebYrDkOxEu96/KG4jNqjJTBb1J6ICmfFyX/AVbeQ==
   dependencies:
     accounting-js "^1.1.1"
     axios "0.17.1"
