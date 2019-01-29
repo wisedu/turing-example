@@ -6440,23 +6440,23 @@ tg-form-didi@^0.1.6:
     tg-ui "^0.0.26"
     vue "^2.5.21"
 
-tg-turing-antd@^1.26.75:
-  version "1.26.75"
-  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.75.tgz#913cd3a1bb99b2ec0c987e958413c20d0ffb8006"
-  integrity sha512-Q3sULQ80N/9QsiKWOvrsJbGbPTJRS5KICCtE8NCokRgy/LjuYYSits8Tv8gGcRuRG8kHlklT2Agvt9Ni9dF7fw==
+tg-turing-antd@^1.26.78:
+  version "1.26.78"
+  resolved "https://registry.npmjs.org/tg-turing-antd/-/tg-turing-antd-1.26.78.tgz#7d5d06289e1d71b19411c14c2cb9164e7035aa62"
+  integrity sha512-x6RW1QMsHUXBag+GvpmoYF5TnbHB8G0m36TJoMtyMVsDh8bva7tSW5M3gGF8XUNi6DbX1u121iilKDmVGbqhOw==
   dependencies:
     bh-iview "^2.0.5"
-    tg-turing "^1.30.11"
+    tg-turing "^1.30.14"
     tiptap "^1.4.0"
     tiptap-extensions "^1.4.0"
     turing "^0.0.74"
     vue "^2.5.21"
     vue-upload-component "^2.8.11"
 
-tg-turing@^1.30.11:
-  version "1.30.11"
-  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.11.tgz#4186877527c9c1403bc07d7c0f6771f208aa0b1a"
-  integrity sha512-pzunnOc/RiRoIgkHiU3MJWll/0SctnLicE9IuDXfKIVyPz2ZoxpYRy99pf2QxJofwo3MUiEM+BE8DR5pzh+JMw==
+tg-turing@^1.30.14:
+  version "1.30.14"
+  resolved "https://registry.npmjs.org/tg-turing/-/tg-turing-1.30.14.tgz#93d02aab02267d04b546a7890d710c3b902cce29"
+  integrity sha512-I753LEv7dU3udMb7BkDG9Ghx+VZQ6Di+QfqVeOBLOnmgHnhMwk4yDprSapftgHMsoDhz4BIjSwT+ATToZh0jdg==
   dependencies:
     accounting-js "^1.1.1"
     axios "0.17.1"
